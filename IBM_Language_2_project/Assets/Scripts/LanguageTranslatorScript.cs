@@ -9,110 +9,178 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace LanguageTranslatorAssistance
+public class LanguageTranslatorScript : MonoBehaviour
 {
+    #region PLEASE SET THESE VARIABLES IN THE INSPECTOR
+    [Space(10)]
+    [Tooltip("The service URL (optional). This defaults to \"https://gateway.watsonplatform.net/langauge-translator/api\"")]
+    [SerializeField]
+    private string serviceUrl;
+    //[Tooltip("Text field to display the results of translation.")]
+    //public Text ResultsField;
+    //[Tooltip("Input field to display what is to be translated")]
+    //public InputField TextInput;
+    //[Header("IAM Authentication")]
+    //[Tooltip("The IAM apikey.")]
+    [SerializeField]
+    private string iamApikey;
+    [Header("Parameters")]
+    // https://cloud.ibm.com/apidocs/language-translator#list-models
+    [Tooltip("The translation model to use. See https://cloud.ibm.com/apidocs/language-translator#list-models.")]
+    [SerializeField]
+    private string translationModel;
+    [Tooltip("The version date with which you would like to use the service in the form YYYY-MM-DD.")]
+    [SerializeField]
+    private string versionDate;
+    #endregion
 
-    public class LanguageTranslatorScript : MonoBehaviour
+    private LanguageTranslatorService languageTranslator;
+
+    public string username;
+    public int maxMessages = 25;
+
+    public GameObject chatPanel, textObject;
+    public InputField chatBox;
+
+    //public Color playerMessage, info;
+
+    [SerializeField]
+    List<Message> messageList = new List<Message>();
+    // Start is called before the first frame update
+    void Start()
     {
-        #region PLEASE SET THESE VARIABLES IN THE INSPECTOR
-        [Space(10)]
-        [Tooltip("The service URL (optional). This defaults to \"https://gateway.watsonplatform.net/langauge-translator/api\"")]
-        [SerializeField]
-        private string serviceUrl;
-        [Tooltip("Text field to display the results of translation.")]
-        public Text ResultsField;
-        [Tooltip("Input field to display what is to be translated")]
-        public InputField TextInput;
-        [Header("IAM Authentication")]
-        [Tooltip("The IAM apikey.")]
-        [SerializeField]
-        private string iamApikey;
-        [Header("Parameters")]
-        // https://cloud.ibm.com/apidocs/language-translator#list-models
-        [Tooltip("The translation model to use. See https://cloud.ibm.com/apidocs/language-translator#list-models.")]
-        [SerializeField]
-        private string translationModel;
-        [Tooltip("The version date with which you would like to use the service in the form YYYY-MM-DD.")]
-        [SerializeField]
-        private string versionDate;
-        #endregion
+        if (string.IsNullOrEmpty(iamApikey))
+            throw new IBMException("Please set the Language Translator iamApikey in the inspector.");
+        if (string.IsNullOrEmpty(translationModel))
+            throw new IBMException("Please set the translationModel in the inspector.");
+        Runnable.Run(CreateService());
+    }
 
-        private LanguageTranslatorService languageTranslator;
-
-        public Button enterButton;
-
-        void Start()
+    // Update is called once per frame
+    void Update()
+    {
+        if (chatBox.text != "")
         {
-            if (string.IsNullOrEmpty(iamApikey))
-                throw new IBMException("Please set the Language Translator iamApikey in the inspector.");
-            if (string.IsNullOrEmpty(translationModel))
-                throw new IBMException("Please set the translationModel in the inspector.");
-            //  Start coroutine to create service
-            //StartCoroutine(CreateService());
-            Button btn = enterButton.GetComponent<Button>();
-            btn.onClick.AddListener(TextEntered);
-            Runnable.Run(CreateService());
-        }
-
-        private void TextEntered()
-        {
-            Debug.Log("Inside TextEntered");
-
-            string userInput = TextInput.text;
-            Debug.Log(userInput);
-
-
-            Translation(userInput);
-        }
-
-
-        private IEnumerator CreateService()
-        {
-            Debug.Log("Inside Create Service");
-            if (string.IsNullOrEmpty(iamApikey))
+            if (Input.GetKeyDown(KeyCode.Return))
             {
-                throw new IBMException("Plesae provide IAM ApiKey for the service.");
-            }
+                //SendMessageToChat(username + ": " + chatBox.text, Message.MessageType.playerMessage);
+                SendMessageToChat(username + ": " + chatBox.text);
+                Translation(chatBox.text);
+                chatBox.text = "";
 
-            IamAuthenticator authenticator = new IamAuthenticator(apikey: iamApikey);
-
-            //  Wait for tokendata
-            while (!authenticator.CanAuthenticate())
-            {
-                //Log.Debug("NULLLLLLLLLLL", "DEBUGGG");
-                yield return null;
-            }
-
-            languageTranslator = new LanguageTranslatorService(versionDate, authenticator);
-
-            if (!string.IsNullOrEmpty(serviceUrl))
-            {
-                languageTranslator.SetServiceUrl(serviceUrl);
             }
         }
-
-
-        //  Call this method from ExampleStreaming
-        public void Translation(string text)
+        else
         {
-            //  Array of text to translate
-            List<string> translateText = new List<string>();
-            translateText.Add(text);
-
-            //  Call to the service
-            languageTranslator.Translate(OnTranslate, translateText, translationModel);
+            if (!chatBox.isFocused && Input.GetKeyDown(KeyCode.Return))
+            {
+                chatBox.ActivateInputField();
+            }
         }
-
-        //  OnTranslate handler
-        private void OnTranslate(DetailedResponse<TranslationResult> response, IBMError error)
+        if (!chatBox.isFocused)
         {
-            string outputSentence = response.Result.Translations[0]._Translation;
-
-            Debug.Log(outputSentence + "here");
-            //ResultsField.text = "hi";
-            ResultsField.text = outputSentence;
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                //SendMessageToChat("You Pressed space!", Message.MessageType.info);
+                SendMessageToChat("You Pressed space!");
+            }
         }
     }
 
+    private IEnumerator CreateService()
+    {
+        Debug.Log("Inside Create Service");
+        if (string.IsNullOrEmpty(iamApikey))
+        {
+            throw new IBMException("Plesae provide IAM ApiKey for the service.");
+        }
 
+        IamAuthenticator authenticator = new IamAuthenticator(apikey: iamApikey);
+
+        //  Wait for tokendata
+        while (!authenticator.CanAuthenticate())
+        {
+            //Log.Debug("NULLLLLLLLLLL", "DEBUGGG");
+            yield return null;
+        }
+
+        languageTranslator = new LanguageTranslatorService(versionDate, authenticator);
+
+        if (!string.IsNullOrEmpty(serviceUrl))
+        {
+            languageTranslator.SetServiceUrl(serviceUrl);
+        }
+    }
+
+    public void Translation(string text)
+    {
+        //  Array of text to translate
+        List<string> translateText = new List<string>();
+        translateText.Add(text);
+
+        //  Call to the service
+        languageTranslator.Translate(OnTranslate, translateText, translationModel);
+    }
+
+    private void OnTranslate(DetailedResponse<TranslationResult> response, IBMError error)
+    {
+        string outputSentence = response.Result.Translations[0]._Translation;
+
+        //Debug.Log(outputSentence + "here");
+        ////ResultsField.text = "hi";
+        //ResultsField.text = outputSentence;
+        SendMessageToChat("Translator: " + outputSentence);
+    }
+
+
+    //public void SendMessageToChat(string text, Message.MessageType messageType)
+    public void SendMessageToChat(string text)
+    {
+        if (messageList.Count >= maxMessages)
+        {
+            Destroy(messageList[0].textObject.gameObject);
+            messageList.Remove(messageList[0]);
+        }
+
+        Message newMessage = new Message();  //ADD new message to list
+
+        newMessage.text = text; //ADD new message to list
+
+        GameObject newText = Instantiate(textObject, chatPanel.transform);
+
+        newMessage.textObject = newText.GetComponent<Text>();
+
+        newMessage.textObject.text = newMessage.text;
+        //newMessage.textObject.color = MessageTypeColor(messageType);
+
+        messageList.Add(newMessage); //ADD new message to list
+    }
+
+    //Color MessageTypeColor(Message.MessageType messageType)
+    //{
+    //    Color color = info;
+
+    //    switch(messageType)
+    //    {
+    //        case Message.MessageType.playerMessage:
+    //            color = playerMessage;
+    //            break; //to end the case statement
+    //    }
+
+    //    return color;
+    //}
+}
+
+[System.Serializable]
+public class Message
+{
+    public string text;
+    public Text textObject;
+    //public MessageType messageType;
+
+    //public enum MessageType
+    //{
+    //    playerMessage,
+    //    info
+    //}
 }
