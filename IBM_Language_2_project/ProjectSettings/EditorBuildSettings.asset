@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Title Screen.unity
     guid: 29e8a169092b845b897ba4f3c85b6b62
   - enabled: 1
-    path: Assets/Scenes/Plane Landing.unity
+    path: Assets/Scenes/Loading Screen.unity
     guid: 15bb63383a37546a88ac49bc3dc5da58
   - enabled: 1
     path: Assets/Scenes/Airport.unity
