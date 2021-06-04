@@ -13,6 +13,10 @@ MonoBehaviour:
   m_Name: Question2
   m_EditorClassIdentifier: 
   _info: 3+3=
-  _answers: []
+  _answers:
+  - _info: 4
+    _isCorrect: 0
+  - _info: 6
+    _isCorrect: 1
   _answerType: 0
   _addScore: 10
