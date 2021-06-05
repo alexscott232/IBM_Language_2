@@ -4,7 +4,7 @@ using UnityEngine;
 using System.Linq;
 using UnityEngine.SceneManagement;
 
-public class GameManager : MonoBehaviour
+public class GameManagerAirport : MonoBehaviour
 {
     Question[] _questions = null;
     public Question[] Questions { get { return _questions; } }
@@ -180,7 +180,7 @@ public class GameManager : MonoBehaviour
 
     void LoadQuestions()
     {
-        Object[] objs = Resources.LoadAll("Questions", typeof(Question));  //Load the Questions from resources folder
+        Object[] objs = Resources.LoadAll("AirportQuestions", typeof(Question));
         _questions = new Question[objs.Length];
         for(int i=0; i < objs.Length; i++)
         {
