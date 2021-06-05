@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -33,11 +34,17 @@ public class GameManager : MonoBehaviour
     {
         events.UpdateQuestionAnswer -= UpdateAnswers;
     }
+
+    private void Awake()
+    {
+        events.CurrentFinalScore = 0;
+    }
+
     private void Start()
     {
-        LoadQuestions();
+        events.StartupHighscore = PlayerPrefs.GetInt(GameUtility.SavePrefKey);
 
-        events.CurrentFinalScore = 0;
+        LoadQuestions();
 
         var seed = UnityEngine.Random.Range(int.MinValue, int.MaxValue);
         UnityEngine.Random.InitState(seed);
@@ -100,6 +107,11 @@ public class GameManager : MonoBehaviour
         FinishedQuestions.Add(currentQuestion);
 
         UpdateScore((isCorrect) ? Questions[currentQuestion].AddScore : -Questions[currentQuestion].AddScore);
+
+        if (IsFinished)
+        {
+            SetHighscore();
+        }
 
         var type = (IsFinished) ? UIManager.ResolutionScreenType.Finish : (isCorrect) ? UIManager.ResolutionScreenType.Correct : UIManager.ResolutionScreenType.Incorrect;
 
@@ -173,6 +185,25 @@ public class GameManager : MonoBehaviour
         for(int i=0; i < objs.Length; i++)
         {
             _questions[i] = (Question)objs[i];
+        }
+    }
+
+    public void RestartGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
+    private void SetHighscore()
+    {
+        var highscore = PlayerPrefs.GetInt(GameUtility.SavePrefKey);
+        if(highscore < events.CurrentFinalScore)
+        {
+            PlayerPrefs.SetInt(GameUtility.SavePrefKey, events.CurrentFinalScore);
         }
     }
 
