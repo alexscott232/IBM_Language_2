@@ -9,9 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Loading Screen.unity
     guid: 15bb63383a37546a88ac49bc3dc5da58
   - enabled: 1
-    path: Assets/Scenes/Airport.unity
+    path: Assets/Scenes/Airport (Before Customs).unity
     guid: feededb27a0ac44d89941857602cc6ee
   - enabled: 1
     path: Assets/Scenes/AssistantScenes/Beginner/AirportPassportControl-Beginner.unity
     guid: 319c8bbb6ed8c454caf1d5d4ff0275f8
+  - enabled: 1
+    path: Assets/Scenes/Aiport (After Customs).unity
+    guid: fd39e5706ebc14da9a91fcad74ff689e
   m_configObjects: {}
