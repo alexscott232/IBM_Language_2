@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a1da9463ba4e64659962019c0e07961a, type: 3}
-  m_Name: Airport2
+  m_Name: Airport9
   m_EditorClassIdentifier: 
-  _info: Translate "Good Morning"
+  _info: Which statement is asking to see your passport
   _answers:
-  - _info: Buonagiorna
+  - _info: Hai il passaporto?
+    _isCorrect: 0
+  - _info: Posso vedere il suo passaporto, per favore
     _isCorrect: 1
-  - _info: Buongiorno
+  - _info: Per favore dammi il tuo passaporto?
     _isCorrect: 0
-  - _info: Ciao
-    _isCorrect: 0
-  - _info: Buonasera
+  - _info: Passaporto per favore
     _isCorrect: 0
   _answerType: 1
   _addScore: 10

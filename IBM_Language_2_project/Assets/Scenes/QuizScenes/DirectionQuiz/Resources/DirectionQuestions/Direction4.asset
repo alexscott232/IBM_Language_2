@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a1da9463ba4e64659962019c0e07961a, type: 3}
-  m_Name: Airport2
+  m_Name: Direction4
   m_EditorClassIdentifier: 
-  _info: Translate "Good Morning"
+  _info: Translate "Cone ci arrive?"
   _answers:
-  - _info: Buonagiorna
+  - _info: How do I get there?
     _isCorrect: 1
-  - _info: Buongiorno
+  - _info: How do you say that?
     _isCorrect: 0
-  - _info: Ciao
+  - _info: Can I go there?
     _isCorrect: 0
-  - _info: Buonasera
+  - _info: How can I travel?
     _isCorrect: 0
   _answerType: 1
   _addScore: 10

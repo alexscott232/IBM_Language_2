@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a1da9463ba4e64659962019c0e07961a, type: 3}
-  m_Name: Airport2
+  m_Name: Direction6
   m_EditorClassIdentifier: 
-  _info: Translate "Good Morning"
+  _info: What is the word for "Before"
   _answers:
-  - _info: Buonagiorna
+  - _info: A
+    _isCorrect: 0
+  - _info: Il Prossimo
+    _isCorrect: 0
+  - _info: Dopo
+    _isCorrect: 0
+  - _info: Prima
     _isCorrect: 1
-  - _info: Buongiorno
-    _isCorrect: 0
-  - _info: Ciao
-    _isCorrect: 0
-  - _info: Buonasera
-    _isCorrect: 0
   _answerType: 1
   _addScore: 10

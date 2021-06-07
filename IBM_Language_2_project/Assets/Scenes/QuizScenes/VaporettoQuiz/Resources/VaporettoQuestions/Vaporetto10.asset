@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a1da9463ba4e64659962019c0e07961a, type: 3}
-  m_Name: Airport2
+  m_Name: Vaporetto10
   m_EditorClassIdentifier: 
-  _info: Translate "Good Morning"
+  _info: How do you ask if the taxi is going to the city centre?
   _answers:
-  - _info: Buonagiorna
+  - _info: Posso prendere questo taxi?
+    _isCorrect: 0
+  - _info: "Questo mi porter\xE0 al centro della citt\xE0?"
     _isCorrect: 1
-  - _info: Buongiorno
+  - _info: Questo mi porta sull'isola?
     _isCorrect: 0
-  - _info: Ciao
-    _isCorrect: 0
-  - _info: Buonasera
+  - _info: "Questo mi porter\xE0 a Venezia?"
     _isCorrect: 0
   _answerType: 1
   _addScore: 10

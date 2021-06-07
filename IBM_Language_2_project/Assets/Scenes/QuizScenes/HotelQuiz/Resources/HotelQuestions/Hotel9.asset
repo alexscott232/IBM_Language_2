@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a1da9463ba4e64659962019c0e07961a, type: 3}
-  m_Name: Airport2
+  m_Name: Hotel9
   m_EditorClassIdentifier: 
-  _info: Translate "Good Morning"
+  _info: Which question doesn't ask where to eat?
   _answers:
-  - _info: Buonagiorna
+  - _info: Quali luoghi dovrei visitare?
     _isCorrect: 1
-  - _info: Buongiorno
+  - _info: Dove meglio mangiare?
     _isCorrect: 0
-  - _info: Ciao
+  - _info: Hai qualche consiglio sui ristoranti?
     _isCorrect: 0
-  - _info: Buonasera
+  - _info: Quali ristoranti ci sono qui intorno?
     _isCorrect: 0
   _answerType: 1
   _addScore: 10
