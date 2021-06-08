@@ -2203,7 +2203,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b0f63af6f6cc4496a8dbdc3ef040cc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  events: {fileID: 0}
+  events: {fileID: 11400000, guid: eff42a17d9d654e02a5faf1843c1d35f, type: 2}
 --- !u!1 &2140505381
 GameObject:
   m_ObjectHideFlags: 0

@@ -2085,6 +2085,7 @@ GameObject:
   - component: {fileID: 1844728588}
   - component: {fileID: 1844728587}
   - component: {fileID: 1844728586}
+  - component: {fileID: 1844728589}
   m_Layer: 5
   m_Name: NextButton
   m_TagString: Untagged
@@ -2156,8 +2157,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+      - m_Target: {fileID: 1844728589}
+        m_TargetAssemblyTypeName: GameManagerVaporetto, Assembly-CSharp
         m_MethodName: Accept
         m_Mode: 1
         m_Arguments:
@@ -2206,6 +2207,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1844728584}
   m_CullTransparentMesh: 1
+--- !u!114 &1844728589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1844728584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3bff91ac4ae544e2b7fc828c86da610, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  events: {fileID: 11400000, guid: eff42a17d9d654e02a5faf1843c1d35f, type: 2}
 --- !u!1 &1880020436
 GameObject:
   m_ObjectHideFlags: 0

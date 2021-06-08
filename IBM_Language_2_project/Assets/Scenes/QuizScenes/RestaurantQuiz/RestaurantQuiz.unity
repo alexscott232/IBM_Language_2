@@ -2091,6 +2091,7 @@ GameObject:
   - component: {fileID: 1878227662}
   - component: {fileID: 1878227661}
   - component: {fileID: 1878227660}
+  - component: {fileID: 1878227663}
   m_Layer: 5
   m_Name: NextButton
   m_TagString: Untagged
@@ -2162,8 +2163,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+      - m_Target: {fileID: 1878227663}
+        m_TargetAssemblyTypeName: GameManagerRestaurant, Assembly-CSharp
         m_MethodName: Accept
         m_Mode: 1
         m_Arguments:
@@ -2212,6 +2213,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1878227658}
   m_CullTransparentMesh: 1
+--- !u!114 &1878227663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1878227658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab86a0a13588c43b994c1a6090f0dd9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  events: {fileID: 11400000, guid: eff42a17d9d654e02a5faf1843c1d35f, type: 2}
 --- !u!1 &1991937987
 GameObject:
   m_ObjectHideFlags: 0

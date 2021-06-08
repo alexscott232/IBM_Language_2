@@ -2070,6 +2070,7 @@ GameObject:
   - component: {fileID: 2005877334}
   - component: {fileID: 2005877333}
   - component: {fileID: 2005877332}
+  - component: {fileID: 2005877335}
   m_Layer: 5
   m_Name: NextButton
   m_TagString: Untagged
@@ -2141,8 +2142,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+      - m_Target: {fileID: 2005877335}
+        m_TargetAssemblyTypeName: GameManagerDirections, Assembly-CSharp
         m_MethodName: Accept
         m_Mode: 1
         m_Arguments:
@@ -2191,6 +2192,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2005877330}
   m_CullTransparentMesh: 1
+--- !u!114 &2005877335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2005877330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8badff9c5feaa48c3b2ccb34c8f97d42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  events: {fileID: 11400000, guid: eff42a17d9d654e02a5faf1843c1d35f, type: 2}
 --- !u!1 &2062963024
 GameObject:
   m_ObjectHideFlags: 0
