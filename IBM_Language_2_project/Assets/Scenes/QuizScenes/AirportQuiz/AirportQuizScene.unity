@@ -2069,6 +2069,7 @@ GameObject:
   - component: {fileID: 2058483701}
   - component: {fileID: 2058483700}
   - component: {fileID: 2058483699}
+  - component: {fileID: 2058483702}
   m_Layer: 5
   m_Name: NextButton
   m_TagString: Untagged
@@ -2140,8 +2141,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+      - m_Target: {fileID: 2058483702}
+        m_TargetAssemblyTypeName: GameManagerAirport, Assembly-CSharp
         m_MethodName: Accept
         m_Mode: 1
         m_Arguments:
@@ -2190,6 +2191,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2058483697}
   m_CullTransparentMesh: 1
+--- !u!114 &2058483702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2058483697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b0f63af6f6cc4496a8dbdc3ef040cc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  events: {fileID: 0}
 --- !u!1 &2140505381
 GameObject:
   m_ObjectHideFlags: 0
