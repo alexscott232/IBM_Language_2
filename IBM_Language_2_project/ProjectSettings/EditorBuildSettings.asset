@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/ForGame/00a_Loading_Screen.unity
     guid: 15bb63383a37546a88ac49bc3dc5da58
   - enabled: 1
+    path: Assets/Scenes/ForGame/00b_Introduction_Difficulty_Select.unity
+    guid: 94b84cd1f1e3e8346892856e14c55ebc
+  - enabled: 1
     path: Assets/Scenes/ForGame/01a_Airport (Before Customs).unity
     guid: feededb27a0ac44d89941857602cc6ee
   - enabled: 1
