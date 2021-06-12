@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/ForGame/01a_Airport (Before Customs).unity
     guid: feededb27a0ac44d89941857602cc6ee
   - enabled: 1
+    path: Assets/Scenes/ForGame/01b0_Lesson1.unity
+    guid: da71a067061bd40de8ec651cd3285b1f
+  - enabled: 1
     path: Assets/Scenes/AssistantScenes/AirportPassportControl.unity
     guid: 319c8bbb6ed8c454caf1d5d4ff0275f8
   - enabled: 1
