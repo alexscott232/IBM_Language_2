@@ -41,4 +41,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ForGame/02e_P.LeRoma(AfterAssistant).unity
     guid: 368d05f0d9e05924787adc265df625c0
+  - enabled: 1
+    path: Assets/Scenes/ForGame/03a_Vaporetto From P.le Roma to Rialto.unity
+    guid: 9ccfa21e4ee288e4a9e43272c59ab043
+  - enabled: 1
+    path: Assets/Scenes/ForGame/03b_VaporettoToHotel.unity
+    guid: fa61cf497b82e7a42b25e15980d7872a
   m_configObjects: {}
