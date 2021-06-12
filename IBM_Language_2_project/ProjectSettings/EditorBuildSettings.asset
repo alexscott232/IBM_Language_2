@@ -18,8 +18,11 @@ EditorBuildSettings:
     path: Assets/Scenes/ForGame/01b0_Lesson1.unity
     guid: da71a067061bd40de8ec651cd3285b1f
   - enabled: 1
-    path: Assets/Scenes/AssistantScenes/AirportPassportControl.unity
-    guid: 319c8bbb6ed8c454caf1d5d4ff0275f8
+    path: Assets/Scenes/ForGame/01b_AirQuiz.unity
+    guid: 68318599b534c4344805c974962215e4
+  - enabled: 1
+    path: Assets/Scenes/ForGame/01c_Assistant.unity
+    guid: 54436d29e870a7d43aaa9dd9abd451a7
   - enabled: 1
     path: Assets/Scenes/ForGame/01d_Aiport (After Customs).unity
     guid: fd39e5706ebc14da9a91fcad74ff689e
