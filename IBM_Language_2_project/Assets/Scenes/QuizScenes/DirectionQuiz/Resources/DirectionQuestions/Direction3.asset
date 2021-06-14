@@ -18,7 +18,7 @@ MonoBehaviour:
     _isCorrect: 1
   - _info: Sinistra
     _isCorrect: 0
-  - _info: Giusto
+  - _info: Destra
     _isCorrect: 0
-  _answerType: 1
+  _answerType: 0
   _addScore: 10

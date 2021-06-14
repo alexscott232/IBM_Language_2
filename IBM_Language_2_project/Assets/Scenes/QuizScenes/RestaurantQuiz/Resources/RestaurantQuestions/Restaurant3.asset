@@ -22,5 +22,5 @@ MonoBehaviour:
     _isCorrect: 1
   - _info: "Qual \xE8 la tua specialit\xE0?"
     _isCorrect: 0
-  _answerType: 1
+  _answerType: 0
   _addScore: 10

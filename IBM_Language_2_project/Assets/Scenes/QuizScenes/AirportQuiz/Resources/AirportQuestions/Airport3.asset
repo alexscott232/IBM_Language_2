@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _info: Translate "Hi/Hello"
   _answers:
-  - _info: Buonagiorna
+  - _info: Buona giornata
     _isCorrect: 0
   - _info: Buongiorno
     _isCorrect: 0
@@ -22,5 +22,5 @@ MonoBehaviour:
     _isCorrect: 1
   - _info: Buonasera
     _isCorrect: 0
-  _answerType: 1
+  _answerType: 0
   _addScore: 10

@@ -12,7 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1da9463ba4e64659962019c0e07961a, type: 3}
   m_Name: Airport8
   m_EditorClassIdentifier: 
-  _info: 
-  _answers: []
+  _info: How do you say 'Please'
+  _answers:
+  - _info: Addio
+    _isCorrect: 0
+  - _info: Grazie
+    _isCorrect: 0
+  - _info: Buona giornata
+    _isCorrect: 0
+  - _info: Per Favore
+    _isCorrect: 1
   _answerType: 0
   _addScore: 10

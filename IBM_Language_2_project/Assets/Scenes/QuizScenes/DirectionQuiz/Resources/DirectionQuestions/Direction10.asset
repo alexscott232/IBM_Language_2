@@ -22,5 +22,5 @@ MonoBehaviour:
     _isCorrect: 0
   - _info: Please can you tell me how to get to the Basilica?
     _isCorrect: 1
-  _answerType: 1
+  _answerType: 0
   _addScore: 10

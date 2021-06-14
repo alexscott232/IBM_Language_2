@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1da9463ba4e64659962019c0e07961a, type: 3}
   m_Name: Airport14
   m_EditorClassIdentifier: 
-  _info: "Translate \"Rest\xF2 in citt\xE0 per poche settimane\""
+  _info: "Translate \"Rest\xF2 in citt\xE0 per un paio di settimane\""
   _answers:
   - _info: I am staying in the city for a few days
     _isCorrect: 0
@@ -22,5 +22,5 @@ MonoBehaviour:
     _isCorrect: 0
   - _info: I am staying in the city for a few weeks
     _isCorrect: 1
-  _answerType: 1
+  _answerType: 0
   _addScore: 10

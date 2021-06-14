@@ -3,7 +3,9 @@ guid: eb3b4d1ea119b42a6b4fa7ccfe1212a9
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - events: {fileID: 11400000, guid: eff42a17d9d654e02a5faf1843c1d35f, type: 2}
+  - answerPrefab: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

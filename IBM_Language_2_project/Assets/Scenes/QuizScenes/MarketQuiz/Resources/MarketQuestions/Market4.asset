@@ -22,5 +22,5 @@ MonoBehaviour:
     _isCorrect: 0
   - _info: "\xC8 troppo caro"
     _isCorrect: 1
-  _answerType: 1
+  _answerType: 0
   _addScore: 10

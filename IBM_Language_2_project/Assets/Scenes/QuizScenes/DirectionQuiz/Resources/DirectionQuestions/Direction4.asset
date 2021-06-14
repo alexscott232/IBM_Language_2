@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1da9463ba4e64659962019c0e07961a, type: 3}
   m_Name: Direction4
   m_EditorClassIdentifier: 
-  _info: Translate "Cone ci arrive?"
+  _info: Translate "Come ci arrive?"
   _answers:
   - _info: How do I get there?
     _isCorrect: 1
@@ -22,5 +22,5 @@ MonoBehaviour:
     _isCorrect: 0
   - _info: How can I travel?
     _isCorrect: 0
-  _answerType: 1
+  _answerType: 0
   _addScore: 10

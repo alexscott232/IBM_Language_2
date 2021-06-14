@@ -16,7 +16,7 @@ MonoBehaviour:
   _answers:
   - _info: Identificazione
     _isCorrect: 0
-  - _info: Nuome
+  - _info: Nome
     _isCorrect: 1
   - _info: Prenotazione
     _isCorrect: 1

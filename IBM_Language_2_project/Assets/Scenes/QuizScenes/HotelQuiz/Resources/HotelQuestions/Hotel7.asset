@@ -22,5 +22,5 @@ MonoBehaviour:
     _isCorrect: 0
   - _info: How are you enjoying your stay?
     _isCorrect: 0
-  _answerType: 1
+  _answerType: 0
   _addScore: 10

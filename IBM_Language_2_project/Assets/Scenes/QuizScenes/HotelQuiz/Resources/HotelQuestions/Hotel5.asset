@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1da9463ba4e64659962019c0e07961a, type: 3}
   m_Name: Hotel5
   m_EditorClassIdentifier: 
-  _info: What does this mean? "Mi chiamo"
+  _info: What does this mean? "Mi Chiamo"
   _answers:
   - _info: My voice
     _isCorrect: 0
@@ -20,7 +20,7 @@ MonoBehaviour:
     _isCorrect: 0
   - _info: My book
     _isCorrect: 0
-  - _info: My room
+  - _info: I am called
     _isCorrect: 1
-  _answerType: 1
+  _answerType: 0
   _addScore: 10
