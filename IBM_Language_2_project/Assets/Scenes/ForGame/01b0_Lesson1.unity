@@ -531,7 +531,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &716563103
 Transform:
   m_ObjectHideFlags: 0
@@ -554,7 +554,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 716563102}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: a2a6c56473479413e9d4c57c877e5019, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 45337403c961a49119a9c65a35dbf8bc, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 1817505787}
@@ -1108,7 +1108,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Skip
+  m_Text: Quiz
 --- !u!222 &1488782745
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1161,7 +1161,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1509333873}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: a2a6c56473479413e9d4c57c877e5019, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 45337403c961a49119a9c65a35dbf8bc, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
