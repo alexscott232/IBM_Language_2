@@ -66,7 +66,7 @@ In this section you add the instructions to run your project on your local machi
 - Sebastiano Zane https://github.com/sz7518
 - Gabrielle Rubin https://github.com/gxr17
 - George Chen https://github.com/ghchen99
-- Christy Chen https://github.com/whychristy
+- Christy Wong https://github.com/whychristy
 
 ## License
 
