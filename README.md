@@ -20,7 +20,6 @@
   - [Versioning](#versioning)
   - [Authors](#authors)
   - [License](#license)
-  - [Acknowledgments](#acknowledgments)
 
 ## Short description
 
@@ -45,14 +44,8 @@ In this section you add the instructions to run your project on your local machi
 ## Live demo
 
 ## Built with
-(Need to fill in)
-
-- [IBM Cloudant](https://cloud.ibm.com/catalog?search=cloudant#search_results) - The NoSQL database used
-- [IBM Cloud Functions](https://cloud.ibm.com/catalog?search=cloud%20functions#search_results) - The compute platform for handing logic
-- [IBM API Connect](https://cloud.ibm.com/catalog?search=api%20connect#search_results) - The web framework used
-- [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-- [Maven](https://maven.apache.org/) - Dependency management
-- [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+- [Unity3D](https://unity.com/) - Game Engine used
+- [IBM Watson Assistant](https://www.ibm.com/cloud/watson-assistant) - Used for Translations
 
 ## Contributing
 (May not be needed) 
@@ -72,4 +65,3 @@ In this section you add the instructions to run your project on your local machi
 
 This project is licensed under (fill in).
 
-## Acknowledgments
