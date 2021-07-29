@@ -42,7 +42,7 @@ There are currently various language-based games on the market, such as Siberia,
 ## The architecture
 
 ## Project roadmap
-![Roadmap](https://user-images.githubusercontent.com/59963655/127484686-f9fb17f7-d388-4198-822c-20f37d1ef201.png | width=100)
+![Roadmap](https://user-images.githubusercontent.com/59963655/127484686-f9fb17f7-d388-4198-822c-20f37d1ef201.png)
 
 ## Getting started
 
