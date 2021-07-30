@@ -39,6 +39,8 @@ There are currently various language-based games on the market, such as Siberia,
 
 ## Demo video
 
+https://youtu.be/cmpKoqqOeB4
+
 ## The architecture
 
 ## Project roadmap
