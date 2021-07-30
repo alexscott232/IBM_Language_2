@@ -10,7 +10,6 @@
   - [The architecture](#the-architecture)
   - [Project roadmap](#project-roadmap)
   - [Getting started](#getting-started)
-  - [Live demo](#live-demo)
   - [Built with](#built-with)
   - [Authors](#authors)
   - [Versioning](#versioning)
@@ -55,8 +54,6 @@ The project is currently around 80% done. Some optimisation of scenes are needed
 - Locate the cloned repo and add it to the Unity Hub.
 - Open the game.
 - Edit or Play scenes as desired.
-
-## Live demo
 
 ## Built with
 - [Unity3D](https://unity.com/) - Game Engine used
