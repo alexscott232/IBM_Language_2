@@ -45,7 +45,7 @@ https://youtu.be/cmpKoqqOeB4
 
 ## Getting started
 
-The project is currently around 80% done. Some optimisation of scenes are needed in order to increase frame rate as well as some scenes need to be linked together. As of now in order to run and edit game scenes the following steps can be followed.
+The project is currently around 80% done. Some optimisation of scenes are needed in order to increase frame rate as well as some scenes need to be linked together. As of now in order to run and edit game scenes the following steps can be taken.
 - Install Unity3D Game Engine.
 - Clone Repo.
 - Ensure that the correct version of Unity is installed Unity Version 2021.1.6f1.
