@@ -1,6 +1,5 @@
 # Secrets of Venice
 
-(maybe put here that project is 80% done)
 
 ## Contents
 - [Secrets of Venice](#Secrets-of-Venice)
@@ -13,10 +12,8 @@
   - [Getting started](#getting-started)
   - [Live demo](#live-demo)
   - [Built with](#built-with)
-  - [Contributing](#contributing)
-  - [Versioning](#versioning)
   - [Authors](#authors)
-  - [License](#license)
+  - [Versioning](#versioning)
 
 ## Short description
 
@@ -48,7 +45,16 @@ https://youtu.be/cmpKoqqOeB4
 
 ## Getting started
 
-In this section you add the instructions to run your project on your local machine for development and testing purposes. You can also add instructions on how to deploy the project in production.
+The project is currently around 80% done. Some optimisation of scenes are needed in order to increase frame rate as well as some scenes need to be linked together. As of now in order to run and edit game scenes the following steps can be followed.
+- Install Unity3D Game Engine.
+- Clone Repo.
+- Ensure that the correct version of Unity is installed Unity Version 2021.1.6f1.
+- Open Unity Hub.
+- Select 'Projects' Tab.
+- Select 'Add'.
+- Locate the cloned repo and add it to the Unity Hub.
+- Open the game.
+- Edit or Play scenes as desired.
 
 ## Live demo
 
@@ -59,11 +65,6 @@ In this section you add the instructions to run your project on your local machi
 - [IBM Watson Speech To Text](https://www.ibm.com/uk-en/cloud/watson-speech-to-text) - Used for the Challenge Scenes
 - [IBM Watson Language Translator](https://www.ibm.com/uk-en/cloud/watson-language-translator) - Used for Translation Boxes.
 
-## Contributing
-(May not be needed) 
-
-## Versioning
-(not sure if this is needed)
 
 ## Authors
 
@@ -73,7 +74,8 @@ In this section you add the instructions to run your project on your local machi
 - George Chen https://github.com/ghchen99
 - Christy Wong https://github.com/whychristy
 
-## License
+## Versioning
 
-This project is licensed under (fill in).
+The game is currently run on Unity Version 2021.1.6f1.
+
 
