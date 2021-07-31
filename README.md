@@ -7,7 +7,6 @@
   - [Short description](#short-description)
   - [Long desciption](#long-description)
   - [Demo video](#demo-video)
-  - [The architecture](#the-architecture)
   - [Project roadmap](#project-roadmap)
   - [Getting started](#getting-started)
   - [Built with](#built-with)
@@ -37,7 +36,6 @@ There are currently various language-based games on the market, such as Siberia,
 
 https://youtu.be/cmpKoqqOeB4
 
-## The architecture
 
 ## Project roadmap
 ![Roadmap](https://user-images.githubusercontent.com/59963655/127484686-f9fb17f7-d388-4198-822c-20f37d1ef201.png)
